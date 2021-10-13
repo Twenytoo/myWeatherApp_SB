@@ -19,7 +19,7 @@ extension ViewController {
             guard let cityName = textField?.text else { return }
             if cityName != "" {
                 let city = cityName.split(separator: " ").joined(separator: "%20")
-                complitionHandler(cityName)
+                complitionHandler(city)
             }
         }
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
