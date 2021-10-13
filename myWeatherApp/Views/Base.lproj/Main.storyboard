@@ -91,6 +91,9 @@
                                         <state key="normal" backgroundImage="magnifyingglass.circle.fill" catalog="system">
                                             <color key="titleColor" name="infoColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jch-el-ELS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -108,6 +111,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gJw-kt-WVz" secondAttribute="trailing" id="z5F-tV-S84"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="eNc-JR-Fhe" id="b0w-qf-gg1"/>
+                        <outlet property="feelsLikeTemperatureLabel" destination="4bI-Yb-AOL" id="yrF-Tx-I4w"/>
+                        <outlet property="temperatureLabel" destination="mqL-Du-lzP" id="ivS-5X-e6v"/>
+                        <outlet property="weatherIconImageView" destination="wuG-vj-zuc" id="abA-yU-1nw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
